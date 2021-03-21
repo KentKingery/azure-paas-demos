@@ -1,0 +1,41 @@
+﻿@model HotelSearch.Models.SearchData
+@{
+    ViewData["Title"] = "Search";
+}
+<h2>Enter your search text</h2>
+<hr />
+@using (Html.BeginForm("Search", "Home", FormMethod.Post))
+{
+    // Display the search text box, with the search icon to the right of it.
+    <div class="searchBoxForm">
+        @Html.TextBoxFor(m => m.searchText, new { @class = "searchBox" }) <input class="searchBoxSubmit" type="submit" value="">
+    </div>
+
+    @if (Model != null)
+    {
+        // Show the result count.
+        <p class="sampleText">
+            @Model.resultList.TotalCount Results
+        </p>
+
+        var results = Model.resultList.GetResults().ToList();
+
+        @foreach (var result in results)
+        {
+            // Display the hotel name and description.
+            <div class="hotelCard">
+                <div class="hotelTitle">
+                    @(result.Document.HotelName + " - " + result.Document.Address.City + ", " + result.Document.Address.StateProvince)
+                </div>
+                <div class="hotelDescription">
+                    @result.Document.Description
+                </div>
+                <div class="hotelAttributes">
+                    <strong>Category:</strong> @result.Document.Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Rating:</strong> @result.Document.Rating
+                </div>
+            </div>
+
+
+        }
+    }
+}
