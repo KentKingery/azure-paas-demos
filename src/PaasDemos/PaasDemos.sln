@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFunctionApp", "Simple
 EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "C2021VSLogicApp", "C2021VSLogicApp\C2021VSLogicApp.deployproj", "{5EF7D763-EA9E-4EEA-8300-63F171F002A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelSearch", "HotelSearch\HotelSearch.csproj", "{04E8610C-EFD9-4FF4-8237-D6C0CC27AB90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelSearch", "HotelSearch\HotelSearch.csproj", "{04E8610C-EFD9-4FF4-8237-D6C0CC27AB90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebApp", "SimpleWebApp\SimpleWebApp.csproj", "{543378B8-2D6C-4EBA-A090-7EF37BA8F00B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreSqlDb", "DotNetCoreSqlDb\DotNetCoreSqlDb.csproj", "{88088F81-AC6E-45CA-94A4-8E1A8F97273E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{04E8610C-EFD9-4FF4-8237-D6C0CC27AB90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04E8610C-EFD9-4FF4-8237-D6C0CC27AB90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04E8610C-EFD9-4FF4-8237-D6C0CC27AB90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{543378B8-2D6C-4EBA-A090-7EF37BA8F00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543378B8-2D6C-4EBA-A090-7EF37BA8F00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543378B8-2D6C-4EBA-A090-7EF37BA8F00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{543378B8-2D6C-4EBA-A090-7EF37BA8F00B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88088F81-AC6E-45CA-94A4-8E1A8F97273E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88088F81-AC6E-45CA-94A4-8E1A8F97273E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88088F81-AC6E-45CA-94A4-8E1A8F97273E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88088F81-AC6E-45CA-94A4-8E1A8F97273E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
